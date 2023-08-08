@@ -15,12 +15,12 @@ function App() {
 }
 
 function Header() {
-  const appTitle= "ID-trackR";
+  const appTitle= "Id-Tracker";
 
   return (
     <header className="header">
       <div className="logo">
-        <img src="logo245.png" alt="ID-TrackR" />
+        <img src="logo245.png" alt="ID-Tracker" />
         <h1>{appTitle}</h1>
       </div>
 

@@ -37,7 +37,7 @@ body {
 
 .search-input {
   height: 48px;
-  width: 450px;
+  width: 480px;
   border-radius: 50px;
   border:none;
 }
@@ -45,7 +45,7 @@ body {
 .search-input:focus {
   outline: none;
   width: 500px;
-  background-color: ;
+  outline: 1px solid #a3e635;
 }
 
 .search-input[placeholder] {
@@ -60,11 +60,10 @@ body {
 
 .search-button {
   position: absolute;
-  top: 0;
-  align-items: center;
   right: 12px;
   border: none;
-  background-color: ;
+  cursor: pointer;
+  background-color: #fff;
 }
 
 .search-button:focus {
@@ -76,8 +75,8 @@ body {
 }
 
 .search-icon {
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
   fill: #1c1917;
 }
 

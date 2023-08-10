@@ -17,6 +17,7 @@ body {
 #root {
   max-width: 1500px;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .header {
@@ -95,4 +96,10 @@ body {
   width: 48px;
   height:48px;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 400px 1fr;
 }

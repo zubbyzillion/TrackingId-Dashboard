@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './style.css';
 
 function App() {
@@ -40,9 +40,33 @@ function Header() {
   );
 }
 
-function TrackingFilter() {}
+const sideLinks = [
+  { text: "Dashboard", link: "https:google.com" },
+  { text: "Orders", link: "https:google.com" },
+  { text: "Notifications", link: "https:google.com" },
+]
 
-function TrackingList() {}
+const orderStats = [
+  { total: 360, status: "success", color: "#16a34a" },
+  { total: 44, status: "pending" , color: "#eab308" },
+  { total: 24, status: "cancelled", color: "#ef4444" },
+]
+
+function TrackingFilter() {
+  return (
+    <aside className="nav-bar">
+      Nav Bar
+    </aside>
+  );
+}
+
+function TrackingList() {
+  return (
+    <main className="info-bar">
+      Order Information
+    </main>
+  );
+}
 
 
 export default App;

@@ -41,9 +41,9 @@ function Header() {
 }
 
 const sideLinks = [
-  { text: "Analytics", link: "https:google.com" },
-  { text: "Orders", link: "https:google.com" },
-  { text: "Notifications", link: "https:google.com" },
+  { text: "Analytics", link: "/analytics" },
+  { text: "Orders", link: "/orders" },
+  { text: "Notifications", link: "/notifications" },
 ]
 
 const orderStats = [
@@ -57,12 +57,12 @@ function TrackingFilter() {
     <aside className="nav-bar">
       <ul>
         <li className="nav-list">
-          <button className="btn btn-active"><a href="/dashboard">Dashboard</a></button>
-
-          {sideLinks.map(() => (<li key={sideLinks.text} className="nav-list">
-            <button className="btn"> <a href={sideLinks.link}>{sideLinks.text}</a> </button>
-          </li>))}
+          <a className="btn btn-active" href="/dashboard" target="_blank" rel="noreferrer"><span>Dashboard</span></a>
         </li>
+
+        {sideLinks.map((sideLinks) => <li key={sideLinks.text} className="nav-list">
+          <a className="btn" href={sideLinks.link}><span>{sideLinks.text}</span></a>
+        </li> )}
       </ul>
     </aside>
   );

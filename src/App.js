@@ -64,6 +64,10 @@ function TrackingFilter() {
           <a className="btn" href={sideLinks.link}><span>{sideLinks.text}</span></a>
         </li> )}
       </ul>
+      
+        <div>
+        <li className="nav-list"><a className="btn btn-logout" href="/logout" target="_blank" rel="noreferrer">Logout</a></li>
+        </div>
     </aside>
   );
 }

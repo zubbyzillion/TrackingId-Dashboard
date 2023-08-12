@@ -12,6 +12,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 48px 64px;
+
+  overflow: hidden;
 }
 
 #root {
@@ -20,7 +22,7 @@ body {
   height: 100vh;
 }
 
-.header {
+.search-comp {
   margin-bottom: 48px;
   display: flex;
   align-items: center;
@@ -100,25 +102,23 @@ body {
 }
 
 .main {
-  padding-top: 24px;
-
   display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 80px, 1fr;
-  gap: 46px;
+
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 80px 1fr;
+
+  /* gap: 64px; */
 }
 
 .nav-bar {
   display: flex;
   align-items:center;
   justify-content: space-between;
-  height: 100vh;
+  gap: 72px;
+  height: 90vh;
   flex-direction: column;
   
   margin: 0 auto;
-  border-right: 3px solid #e9ecef;
-  
-  padding: 48px;
 
   font-family: "Inter", sans-serif;
   background-color: #fafaf9;
@@ -132,12 +132,14 @@ body {
 
   list-style-type: none;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
-.nav-list:last-child {
-  align-items:last baseline;
-  justify-items: space-between;
+.logout {
+  /* margin-left: auto; */
+  display: flex;
+  align-items: baseline;
+  justify-items: baseline;
 }
 
 .btn:hover {
@@ -171,6 +173,13 @@ body {
 }
 
 .btn-logout:hover {
-  color: #1c1917;
-  background-color: #fff;
+  color: #fafaf9;
+  background-color: #fda4af;
+}
+
+.tracking-section {
+  display: flex;
+  flex-direction: column;
+
+  overflow: scroll;
 }

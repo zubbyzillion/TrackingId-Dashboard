@@ -1,28 +1,26 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './style.css';
 
 function App() {
   return (
     <>
-      <Header />
-
       <main className="main">
-        <TrackingFilter />
-        <TrackingList />
+        <Navigation />
+        <div className="tracking-section">
+          <SearchComp />
+          <TrackingList />
+        </div>
       </main>
     </>
   );
 }
 
-function Header() {
-  const appTitle= "Id-Tracker";
+function SearchComp() {
+
 
   return (
-    <header className="header">
-      <div className="logo">
-        <img src="logo245.png" alt="ID-Tracker" />
-        <h1>{appTitle}</h1>
-      </div>
+    <main className="search-comp">
+
 
       <form className="search-bar">
         <input type="text" className="search-input" placeholder="Search Orders" />
@@ -36,7 +34,7 @@ function Header() {
       <div className="profile">
         <img src="profile-img.jpg" alt="profile-pic" />
       </div>
-    </header>
+    </main>
   );
 }
 
@@ -44,18 +42,25 @@ const sideLinks = [
   { text: "Analytics", link: "/analytics" },
   { text: "Orders", link: "/orders" },
   { text: "Notifications", link: "/notifications" },
-]
+];
 
-const orderStats = [
-  { total: 360, status: "success", color: "#16a34a" },
-  { total: 44, status: "pending" , color: "#eab308" },
-  { total: 24, status: "cancelled", color: "#ef4444" },
-]
+// const orderStats = [
+//   { total: 360, status: "success", color: "#16a34a" },
+//   { total: 44, status: "pending" , color: "#eab308" },
+//   { total: 24, status: "cancelled", color: "#ef4444" },
+// ];
 
-function TrackingFilter() {
+function Navigation() {
+  const appTitle= "Id-Tracker";
+
   return (
     <aside className="nav-bar">
-      <ul>
+      <div className="logo">
+        <img src="logo245.png" alt="ID-Tracker" />
+        <h1>{appTitle}</h1>
+      </div>
+
+      <ul className="navigation-list-items">
         <li className="nav-list">
           <a className="btn btn-active" href="/dashboard" target="_blank" rel="noreferrer"><span>Dashboard</span></a>
         </li>
@@ -64,17 +69,17 @@ function TrackingFilter() {
           <a className="btn" href={sideLinks.link}><span>{sideLinks.text}</span></a>
         </li> )}
       </ul>
-      
-        <div>
+
+      <div className="logout">
         <li className="nav-list"><a className="btn btn-logout" href="/logout" target="_blank" rel="noreferrer">Logout</a></li>
-        </div>
+      </div>
     </aside>
   );
 }
 
 function TrackingList() {
   return (
-    <main className="info-bar">
+    <main className="tracking-comp">
       Order Information
     </main>
   );

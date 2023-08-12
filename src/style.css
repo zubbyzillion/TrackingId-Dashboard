@@ -115,7 +115,6 @@ body {
   display: flex;
   align-items:center;
   justify-content: space-between;
-  gap: 72px;
   height: 90vh;
   flex-direction: column;
   
@@ -151,7 +150,6 @@ body {
 
 /* #c3fae8 */
 
-
 .btn {
   display: block;
   margin: 0 auto;
@@ -181,13 +179,33 @@ body {
 .tracking-section {
   display: flex;
   flex-direction: column;
-
-  /* background-color: #737373; */
-
-  /* overflow: scroll; */
+  min-width: 0; /* Key to horizontal scroll */
 }
 
-.order-section {
-  height: 100vh;
-  overflow: scroll;
+.orders-section {
+
+}
+
+.order-section-comp {
+  margin-bottom: 48px;
+}
+
+.order-card-scroll {
+}
+
+.order-status-list {
+  display: flex;
+  gap: 24px;
+  /* flex: 10 0 auto; */
+  align-items: flex-start;
+  overflow-x: auto;
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+
+.order-cards {
+  display: flex;
+  
+  border-radius: 24px;
+  padding: 96px;
 }

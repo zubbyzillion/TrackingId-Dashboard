@@ -27,7 +27,7 @@ function SearchComp() {
 
 
       <form className="search-bar">
-        <input type="text" className="search-input" placeholder="Search Orders" />
+        <input type="text" className="search-input" placeholder="Search Order ID" />
         <button className="search-button">
           <svg className="search-icon">
             <use xlinkHref="sprite.svg#icon-magnifying-glass"></use>
@@ -36,6 +36,10 @@ function SearchComp() {
       </form>
 
       <div className="profile">
+      <div>
+        <span>Super Admin</span>
+        <p>princewillbeluonwuogbo1@gmail.com</p>
+      </div>
         <img src="profile-img.jpg" alt="profile-pic" />
       </div>
     </main>
@@ -89,8 +93,10 @@ function OrderList() {
           { orderStats.map((stats) =>
             <li key={stats.status} className="order-cards" style={{ backgroundColor: stats.color }}>
               <h3>{stats.total}</h3>
-              <span>{stats.status}</span>
-              <p>orders</p>
+              <div>
+                <span>{stats.status}</span>
+                <p>orders</p>
+              </div>
             </li>
           ) }
         </ul>

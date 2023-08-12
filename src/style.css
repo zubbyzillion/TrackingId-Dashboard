@@ -94,6 +94,29 @@ body {
   width: 48px;
 }
 
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.profile div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile div span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile div p {
+  font-size: 12px;
+}
+
 .profile img {
   width: 48px;
   height:48px;
@@ -205,7 +228,22 @@ body {
 
 .order-cards {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
   
-  border-radius: 24px;
-  padding: 96px;
+  border-radius: 18px;
+  padding: 64px;
+}
+
+.order-cards h3 {
+  font-size: 64px;
+}
+
+.order-cards div {
+  font-size: 18px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
 }

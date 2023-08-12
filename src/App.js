@@ -8,7 +8,9 @@ function App() {
         <Navigation />
         <div className="tracking-section">
           <SearchComp />
-          <TrackingList />
+          <div className="orders-section">
+          <OrderList />
+          </div>
         </div>
       </main>
     </>
@@ -77,9 +79,9 @@ function Navigation() {
   );
 }
 
-function TrackingList() {
+function OrderList() {
   return (
-    <main className="tracking-comp">
+    <main className="order-section">
       Order Information
     </main>
   );

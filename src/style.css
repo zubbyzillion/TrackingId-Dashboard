@@ -103,11 +103,12 @@ body {
 
 .main {
   display: grid;
+  background-color: #fafafa;
 
   grid-template-columns: 250px 1fr;
   grid-template-rows: 80px 1fr;
 
-  /* gap: 64px; */
+  gap: 64px;
 }
 
 .nav-bar {
@@ -181,5 +182,12 @@ body {
   display: flex;
   flex-direction: column;
 
+  /* background-color: #737373; */
+
+  /* overflow: scroll; */
+}
+
+.order-section {
+  height: 100vh;
   overflow: scroll;
 }

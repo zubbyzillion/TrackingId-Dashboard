@@ -11,7 +11,10 @@ function App() {
           <SearchComp />
           </div>
           <div className="orders-section">
-          <OrderList />
+          <OrderStatsList />
+          </div>
+          <div className="order-list-section">
+            <FilterListCategory />
           </div>
         </div>
       </main>
@@ -85,7 +88,7 @@ function Navigation() {
   );
 }
 
-function OrderList() {
+function OrderStatsList() {
   return (
     <section className="order-section-comp">
       <div className="order-card-scroll">
@@ -98,12 +101,16 @@ function OrderList() {
                 <p>orders</p>
               </div>
             </li>
-          ) }
+          )}
         </ul>
       </div>
     </section>
   );
 }
-
+function FilterListCategory() {
+  return (
+    <div className="order-filter">Order Filter</div>
+  );
+}
 
 export default App;

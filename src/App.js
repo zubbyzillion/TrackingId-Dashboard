@@ -112,11 +112,13 @@ function FilterListCategory() {
     <div className="order-filter">
       <div className="filter-function">
         <span>Filter by:</span>
-        <option></option>
+        <select>
+          {}
+        </select>
       </div>
 
       <div className="add-btn">
-        <button className="btn">Add Order</button>
+        <button className="order-btn btn">Add Order</button>
       </div>
     </div>
   );

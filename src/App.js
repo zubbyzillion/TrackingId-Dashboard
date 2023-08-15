@@ -26,7 +26,7 @@ function SearchComp() {
 
 
   return (
-    <main className="search-comp">
+    <section className="search-comp">
 
 
       <form className="search-bar">
@@ -45,7 +45,7 @@ function SearchComp() {
       </div>
         <img src="profile-img.jpg" alt="profile-pic" />
       </div>
-    </main>
+    </section>
   );
 }
 
@@ -109,7 +109,16 @@ function OrderStatsList() {
 }
 function FilterListCategory() {
   return (
-    <div className="order-filter">Order Filter</div>
+    <div className="order-filter">
+      <div className="filter-function">
+        <span>Filter by:</span>
+        <option></option>
+      </div>
+
+      <div className="add-btn">
+        <button className="btn">Add Order</button>
+      </div>
+    </div>
   );
 }
 

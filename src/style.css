@@ -210,7 +210,25 @@ body {
   flex-direction: column;
   min-width: 0; /* Key to horizontal scroll */
 }
+::-webkit-scrollbar-track {
+  background: #fafaf9;
+}
 
+*::-webkit-scrollbar {
+  background: #c1c1c1;
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d9f99d;
+  border-radius: 16px;
+  cursor: grab;
+}
 .orders-section {
 
 }
@@ -276,14 +294,12 @@ body {
 
 .filter-function select {
   border: none;
+  outline: none;
   padding: 16px;
   border-radius: 16px;
+  font-family: inherit;
 }
 
 .filter-function select:focus {
   border: 1px solid #a3e635;
-}
-
-.filter-function select::selection {
-  border: none;
 }

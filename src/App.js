@@ -113,7 +113,8 @@ function FilterListCategory() {
       <div className="filter-function">
         <span>Filter by:</span>
         <select>
-          {}
+          <option value="">Choose Category:</option>
+          {orderStats.map((stats) => <option>{stats.status.toUpperCase()}</option>)}
         </select>
       </div>
 

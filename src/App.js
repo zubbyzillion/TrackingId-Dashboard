@@ -109,6 +109,7 @@ function OrderStatsList() {
 }
 function FilterListCategory() {
   return (
+  <>
     <div className="order-filter">
       <div className="filter-function">
         <span>Filter by:</span>
@@ -121,7 +122,16 @@ function FilterListCategory() {
       <div className="add-btn">
         <button className="order-btn btn">Add Order</button>
       </div>
+
     </div>
+  
+    <div className="data-table">
+        <td>
+          <th>ID Number</th>
+          <th>Status</th>
+        </td>
+    </div>
+  </>
   );
 }
 

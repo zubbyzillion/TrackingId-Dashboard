@@ -61,6 +61,12 @@ const orderStats = [
   { total: 24, status: "cancelled", color: "#fda4af" },
 ];
 
+const orderData = [
+  { idNumber: "67899521JK", email: "princewillbeluonwuogbo1@gmail.com", status: "successful", color: "#86efac", date: "17-06-2023" },
+  { idNumber: "67899522JK", email: "johndoe@gmail.com", status: "pending", color: "#fde047", date: "05-06-2023" },
+  { idNumber: "67899523JK", email: "tonycode@gmail.com", status: "cancelled", color: "#fda4af", date: "12-06-2023" },
+]
+
 function Navigation() {
   const appTitle= "Id-Tracker";
 
@@ -126,10 +132,16 @@ function FilterListCategory() {
     </div>
   
     <div className="data-table">
-        <td>
-          <th>ID Number</th>
-          <th>Status</th>
-        </td>
+      <table>
+        <thead>
+          <tr>
+            <th>ID Number</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   </>
   );

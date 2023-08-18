@@ -19,7 +19,8 @@ body {
 #root {
   max-width: 1500px;
   margin: 0 auto;
-  height: 100vh;
+  /* height: 100vh; */
+  /* overflow: scroll; */
 }
 
 .search-comp {
@@ -31,6 +32,7 @@ body {
 
   border-bottom: 1px solid #1c1917;
   padding-bottom: 24px;
+  /* height: 100vh; */
 }
 
 .search-bar { 
@@ -136,13 +138,14 @@ body {
   grid-template-rows: 80px 1fr;
 
   gap: 64px;
+  /* overflow: scroll; */
 }
 
 .nav-bar {
   display: flex;
   align-items:center;
   justify-content: space-between;
-  height: 90vh;
+  height: 96vh;
   flex-direction: column;
   
   border-right: 1px solid #1c1917;
@@ -209,9 +212,14 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 0; /* Key to horizontal scroll */
+
+  height: 100vh;
+  overflow: scroll;
 }
 ::-webkit-scrollbar-track {
   background: #fafaf9;
+  /* width: 10px;
+  height: 8px; */
 }
 
 *::-webkit-scrollbar {
@@ -222,6 +230,8 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #c1c1c1;
   border-radius: 16px;
+  /* width: 10px;
+  height: 8px; */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -238,6 +248,10 @@ body {
 }
 
 .order-card-scroll {
+}
+
+.order-list-section {
+  overflow: scroll;
 }
 
 .order-status-list {
@@ -274,6 +288,7 @@ body {
 
 .order-filter {
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: space-between;
 }
@@ -302,4 +317,24 @@ body {
 
 .filter-function select:focus {
   border: 1px solid #a3e635;
+}
+
+.data-table {
+  margin-top: 48px;
+  overflow: scroll;
+}
+
+table {
+  width: 950px;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px 24px;
+}
+
+thead, tr {
+  background-color: #a3e635;
+  color: #1c1917;
 }

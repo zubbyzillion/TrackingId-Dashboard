@@ -117,18 +117,17 @@ function FilterListCategory() {
   return (
   <>
     <div className="order-filter">
-      <div className="filter-function">
-        <span>Filter by:</span>
-        <select>
-          <option value="">Choose Category:</option>
-          {orderStats.map((stats) => <option>{stats.status.toUpperCase()}</option>)}
-        </select>
-      </div>
+        <div className="filter-function">
+          <span>Filter by:</span>
+          <select>
+            <option value="">Choose Category:</option>
+            {orderStats.map((stats) => <option>{stats.status.toUpperCase()}</option>)}
+          </select>
+        </div>
 
-      <div className="add-btn">
-        <button className="order-btn btn">Add Order</button>
-      </div>
-
+        <div className="add-btn">
+          <button className="order-btn btn">Add Order</button>
+        </div>
     </div>
   
     <div className="data-table">
@@ -141,6 +140,15 @@ function FilterListCategory() {
             <th>Date</th>
           </tr>
         </thead>
+
+        <tbody>
+          {orderData.map((data) => <tr>
+            <td>{data.idNumber}</td>
+            <td>{data.email}</td>
+            <td>{data.status}</td>
+            <td>{data.date}</td>
+          </tr>)}
+        </tbody>
       </table>
     </div>
   </>

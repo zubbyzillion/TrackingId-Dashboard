@@ -147,7 +147,7 @@ function FilterListCategory() {
           {orderData.map((data) => <tr>
             <td>{data.idNumber}</td>
             <td>{data.email}</td>
-            <td style={{ backgroundColor: data.color, fontWeight: 500, borderRadius: 16, padding: 6, height: 12 }}><span className="card">{data.status.toUpperCase()}</span></td>
+            <td><span className="card" style={{ backgroundColor: data.color, fontWeight: 600, borderRadius: 16, padding: 8 }}>{data.status.toUpperCase()}</span></td>
             <td>{data.date}</td>
           </tr>)}
         </tbody>

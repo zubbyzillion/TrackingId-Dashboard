@@ -11,11 +11,13 @@ function App() {
           <SearchComp />
           </div>
           <div className="orders-section">
-          <OrderStatsList />
+            <OrderStatsList />
+
+            <div className="order-list-section">
+              <FilterListCategory />
+            </div>
           </div>
-          <div className="order-list-section">
-            <FilterListCategory />
-          </div>
+          
         </div>
       </main>
     </>
@@ -145,7 +147,7 @@ function FilterListCategory() {
           {orderData.map((data) => <tr>
             <td>{data.idNumber}</td>
             <td>{data.email}</td>
-            <td>{data.status}</td>
+            <td style={{ backgroundColor: data.color, fontWeight: 500, borderRadius: 16, padding: 6, height: 12 }}><span className="card">{data.status.toUpperCase()}</span></td>
             <td>{data.date}</td>
           </tr>)}
         </tbody>

@@ -23,8 +23,13 @@ body {
   /* overflow: scroll; */
 }
 
+.search-section {
+  position: sticky;
+  z-index: 999;
+}
+
 .search-comp {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 
   display: flex;
   align-items: center;
@@ -214,7 +219,6 @@ body {
   min-width: 0; /* Key to horizontal scroll */
 
   height: 100vh;
-  overflow: scroll;
 }
 ::-webkit-scrollbar-track {
   background: #fafaf9;
@@ -228,8 +232,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
+  background: #fafafa;
   border-radius: 16px;
+  /* #c1c1c1 */
   /* width: 10px;
   height: 8px; */
 }
@@ -239,12 +244,14 @@ body {
   border-radius: 16px;
   cursor: grab;
 }
-.orders-section {
 
+.orders-section {
+  height: 100vh;
+  overflow: scroll;
 }
 
 .order-section-comp {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .order-card-scroll {
@@ -324,9 +331,22 @@ body {
   overflow: scroll;
 }
 
+.card {
+  display: block;
+  /* align-items: center;
+  justify-content: center; */
+
+  /* margin: 0 auto; */
+  /* height: 16px; */
+  /* padding: 16px 8px; */
+  border-radius: 8px;
+  text-align: center;
+}
+
 table {
-  width: 950px;
+  width: 900px;
   border-collapse: collapse;
+  font-family: "Inter", sans-serif;
 }
 
 th, td {
@@ -334,7 +354,18 @@ th, td {
   padding: 16px 24px;
 }
 
-thead, tr {
+thead tr {
   background-color: #a3e635;
   color: #1c1917;
+}
+
+tbody {
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
 }

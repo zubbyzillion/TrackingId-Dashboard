@@ -147,7 +147,7 @@ function FilterListCategory() {
           {orderData.map((data) => <tr>
             <td>{data.idNumber}</td>
             <td>{data.email}</td>
-            <td><span className="card" style={{ backgroundColor: data.color, fontWeight: 600, borderRadius: 16, padding: 8 }}>{data.status.toUpperCase()}</span></td>
+            <td><span className="card" style={{ backgroundColor: data.color, fontWeight: 500, borderRadius: 16, padding: 8 }}>{data.status.toUpperCase()}</span></td>
             <td>{data.date}</td>
           </tr>)}
         </tbody>
@@ -160,7 +160,7 @@ function FilterListCategory() {
           <div className="pagination">
             <button className="pagination-btn">&larr;</button>
             <a href="#/1" className="page-link page-link-active">1</a>
-            <a href="#/2" className="page-link">2</a>
+            <a href="#/2" className="page-link dots">2</a>
             <a href="#/..." className="page-link">...</a>
             <a href="#/10" className="page-link">10</a>
             <button className="pagination-btn">&rarr;</button>

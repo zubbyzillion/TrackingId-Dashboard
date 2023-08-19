@@ -152,6 +152,20 @@ function FilterListCategory() {
           </tr>)}
         </tbody>
       </table>
+
+      <div className="table-pagination">
+
+            <span>Showing results for 10 entries</span>
+
+          <div className="pagination">
+            <button className="pagination-btn">&larr;</button>
+            <a href="#/1" className="page-link page-link-active">1</a>
+            <a href="#/2" className="page-link">2</a>
+            <a href="#/..." className="page-link">...</a>
+            <a href="#/10" className="page-link">10</a>
+            <button className="pagination-btn">&rarr;</button>
+          </div>
+        </div>
     </div>
   </>
   );

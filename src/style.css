@@ -371,3 +371,31 @@ tbody {
 tbody tr:nth-child(even) {
   background-color: #e9ecef;
 }
+
+.table-pagination {
+  background-color: #e9ecef;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-pagination span {
+  font-weight: 500;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pagination-btn {
+  border: 1px solid #d9f99d;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: none;
+  cursor: pointer;
+}

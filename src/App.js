@@ -7,17 +7,18 @@ function App() {
       <main className="main">
         <Navigation />
         <div className="tracking-section">
+
           <div className="search-section">
           <SearchComp />
           </div>
+
           <div className="orders-section">
             <OrderStatsList />
 
-            <div className="order-list-section">
-              <FilterListCategory />
-            </div>
+          <div className="order-list-section">
+            <FilterListCategory />
           </div>
-          
+          </div>
         </div>
       </main>
     </>
@@ -147,7 +148,7 @@ function FilterListCategory() {
           {orderData.map((data) => <tr>
             <td>{data.idNumber}</td>
             <td>{data.email}</td>
-            <td><span className="card" style={{ backgroundColor: data.color, fontWeight: 500, borderRadius: 16, padding: 8 }}>{data.status.toUpperCase()}</span></td>
+            <td><span className="card" style={{ backgroundColor: data.color, fontWeight: 600, borderRadius: 16, padding: 8, fontSize: 12 }}>{data.status.toUpperCase()}</span></td>
             <td>{data.date}</td>
           </tr>)}
         </tbody>

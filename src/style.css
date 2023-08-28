@@ -259,6 +259,7 @@ body {
 
 .order-list-section {
   overflow: scroll;
+  margin-bottom: 80px;
 }
 
 .order-status-list {
